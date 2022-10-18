@@ -67,12 +67,12 @@ print("lista = ", lista)
 
 # Ejercicio 1: Utilice las funciones anteriores para agregar elementos faltantes
 
-
 def ejercicio_1():
     lista = ["P", "t"]
     lista.append("H")
-    lista.insert("D")
-    lista.extend("I", "J", "K")
+    lista.insert(1, "D")
+    lista.extend(["I", "J", "K", "Python"])
+    print(lista)
     # TODO 
     assert "".join(lista) == "Python"
     return ejercicio_1()
@@ -85,6 +85,7 @@ def ejercicio_2():
     del lista[7]
     lista.remove(8)
     lista.pop()
+    print(lista)
     # TODO
     assert lista == list(range(1, 6))
     return ejercicio_2()
