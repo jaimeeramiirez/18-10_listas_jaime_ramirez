@@ -7,3 +7,5 @@ def ejercicio2():
     lista.pop()
     # TODO
     assert lista == list(range(1, 6))
+
+ejercicio2()

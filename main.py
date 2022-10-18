@@ -63,11 +63,13 @@ print("""lista.extend(["i", "j"])""")
 lista.extend(["i", "j"])
 print("lista = ", lista)
 
-respuesta=print(input("Que ejercicio quieres que te muestre?:"))
 
-if respuesta==1:
-  import ejercicio1
-elif respuesta==2:
-  import ejercicio2
-else:
-  print("Respuesta incorrecta")
+def ejercicio2():
+    lista = [1, 4, 2, 5, 4, 3, 4, 7, 5, 8, 9]
+    del lista[7]
+    lista.remove(8)
+    lista.pop()
+    # TODO
+    assert lista == list(range(1, 6))
+    print(lista)
+    return ejercicio2()

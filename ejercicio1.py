@@ -3,5 +3,7 @@
 
 def ejercicio1():
     lista = ["P", "t"]
+    lista.append("H")
+    
     # TODO 
     assert "".join(lista) == "Python"
