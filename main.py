@@ -64,6 +64,22 @@ lista.extend(["i", "j"])
 print("lista = ", lista)
 
 
+
+# Ejercicio 1: Utilice las funciones anteriores para agregar elementos faltantes
+
+
+def ejercicio1():
+    lista = ["P", "t"]
+    lista.append("H")
+    lista.insert("D")
+    lista.extend("I", "J", "K")
+    # TODO 
+    assert "".join(lista) == "Python"
+    return ejercicio1()
+
+
+# Ejercicio 2: Utilice las funciones anteriores para elminar elementos sobrantes
+
 def ejercicio2():
     lista = [1, 4, 2, 5, 4, 3, 4, 7, 5, 8, 9]
     del lista[7]
@@ -71,5 +87,4 @@ def ejercicio2():
     lista.pop()
     # TODO
     assert lista == list(range(1, 6))
-    print(lista)
     return ejercicio2()
